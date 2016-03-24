@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsAppIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNA-U0-K1b">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp Share Demo App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-rc-ogU">
+                                        <rect key="frame" x="190" y="43" width="221" height="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-4j-LwP">
+                                        <rect key="frame" x="16" y="207" width="568" height="30"/>
+                                        <color key="backgroundColor" red="0.57129525394197511" green="0.74901960779999999" blue="0.60368274320965654" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Send Text Only">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSendTextonlyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MN-PN-f8N"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-dU-ocJ">
+                                        <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                        <color key="backgroundColor" red="0.57129525394197511" green="0.74901960779999999" blue="0.60368274320965654" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Send Image Only">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSendImageOnlyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hV-DM-s6p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="centerY" secondItem="QNA-U0-K1b" secondAttribute="centerY" id="4f8-tR-GiG"/>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="top" secondItem="j1D-4j-LwP" secondAttribute="bottom" constant="48" id="85F-gK-Xnx"/>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="leading" secondItem="j1D-4j-LwP" secondAttribute="leading" id="DCi-lW-PCI"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1D-4j-LwP" secondAttribute="trailing" constant="16" id="FK4-iT-8Q9"/>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="trailing" secondItem="j1D-4j-LwP" secondAttribute="trailing" id="RNi-5a-fHo"/>
+                                    <constraint firstItem="dGX-rc-ogU" firstAttribute="centerX" secondItem="QNA-U0-K1b" secondAttribute="centerX" id="Vco-5I-DN8"/>
+                                    <constraint firstItem="j1D-4j-LwP" firstAttribute="leading" secondItem="QNA-U0-K1b" secondAttribute="leading" constant="16" id="W6z-qy-f0q"/>
+                                    <constraint firstItem="dGX-rc-ogU" firstAttribute="top" secondItem="QNA-U0-K1b" secondAttribute="top" constant="43" id="eNi-gR-Zi2"/>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="width" secondItem="j1D-4j-LwP" secondAttribute="width" id="fiW-dd-5Ts"/>
+                                    <constraint firstItem="fjg-dU-ocJ" firstAttribute="height" secondItem="j1D-4j-LwP" secondAttribute="height" id="qKH-yP-qcc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QNA-U0-K1b" secondAttribute="bottom" id="2zA-8C-obA"/>
+                            <constraint firstAttribute="trailing" secondItem="QNA-U0-K1b" secondAttribute="trailing" id="CGQ-nn-tw2"/>
+                            <constraint firstItem="QNA-U0-K1b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PQp-Mh-wn2"/>
+                            <constraint firstItem="QNA-U0-K1b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jyM-fd-OFM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
